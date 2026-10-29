@@ -1,6 +1,6 @@
 [app]
-title = PhoneAI
-package.name = phoneai
+title = NeuroPocket
+package.name = neuropocket
 package.domain = org.localai
 
 source.dir = .
@@ -13,6 +13,7 @@ orientation = portrait
 fullscreen = 0
 
 # Android specific
+android.accept_sdk_license = True
 android.permissions = INTERNET
 android.api = 33
 android.minapi = 21
