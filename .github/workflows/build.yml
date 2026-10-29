@@ -31,20 +31,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             build-essential \
+            ccache \
             git \
-            ffmpeg \
-            libsdl2-dev \
-            libsdl2-image-dev \
-            libsdl2-mixer-dev \
-            libsdl2-ttf-dev \
-            libportmidi-dev \
-            libswscale-dev \
-            libavformat-dev \
-            libavcodec-dev \
-            zlib1g-dev \
-            libgstreamer1.0-dev \
-            gstreamer1.0-plugins-base \
-            gstreamer1.0-plugins-good \
             libffi-dev \
             libssl-dev \
             autoconf \
@@ -53,7 +41,8 @@ jobs:
             pkg-config \
             cmake \
             zip \
-            unzip
+            unzip \
+            zlib1g-dev
 
       - name: Install Buildozer and Dependencies
         run: |
